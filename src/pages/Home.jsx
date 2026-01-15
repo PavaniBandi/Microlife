@@ -26,13 +26,12 @@ export default function Home() {
             />
           </a>
           <nav className="header__nav">
-            <a href="#products">Products</a>
+            <a href="#why-microgreens">Why Microgreens</a>
+            <a href="#products">Our Varieties</a>
             <a href="#pricing">Pricing</a>
             <a href="#faq">FAQ</a>
+            <a href="#contact">Contact Us</a>
           </nav>
-          <a href={contact.whatsappLink} className="btn btn--primary">
-            Subscribe Now
-          </a>
         </div>
       </header>
 
@@ -55,7 +54,7 @@ export default function Home() {
                 href={contact.whatsappLink}
                 className="btn btn--primary btn--lg"
               >
-                Start Fresh — {pricing.currency}
+                Subscribe Now — {pricing.currency}
                 {pricing.monthly}/mo
               </a>
               <a href="#products" className="btn btn--outline btn--lg">
@@ -77,7 +76,7 @@ export default function Home() {
           <div className="hero__visual">
             <div className="hero__image-wrapper">
               <img
-                src="/images/hero.jpg"
+                src="/images/hero.png"
                 alt="Fresh microgreens"
                 className="hero__image"
               />
@@ -86,7 +85,65 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Microgreens */}
+      {/* Why Microgreens - Story */}
+      <section className="section section--story" id="why-microgreens">
+        <div className="container container--narrow">
+          <div className="story">
+            <h2 className="story__title">Why Microgreens?</h2>
+
+            <p className="story__text">
+              Growing up, our parents never worried about vegetables. They came
+              from real farms, real soil, and real seasons.
+            </p>
+
+            <p className="story__text story__text--emphasis">
+              But somewhere along the way… things changed.
+            </p>
+
+            <p className="story__text">
+              Farms now use pesticides, growth boosters, and chemicals just to
+              make vegetables look perfect. And all of that goes into our bodies
+              — and even into our children's bodies.
+            </p>
+
+            <p className="story__text">
+              For us adults, it's about staying healthy.{" "}
+              <strong>But for our kids… it shapes their future.</strong>
+            </p>
+
+            <p className="story__text">
+              If we can't control everything, we can at least choose one clean,
+              honest, nutrient-rich food every day for our families.
+            </p>
+
+            <div className="story__highlight">
+              <h3>That's why we started MicroLife:</h3>
+              <ul className="story__list">
+                <li>100% chemical-free</li>
+                <li>Harvested fresh</li>
+                <li>Delivered within hours</li>
+                <li>Up to 40× more nutrients than veggies</li>
+                <li>Zero prep needed</li>
+              </ul>
+            </div>
+
+            <p className="story__text story__text--emphasis">
+              When it comes to what we feed our families, purity isn't optional
+              — it's essential.
+            </p>
+
+            <div className="story__fact">
+              <span className="story__fact-icon">🌱</span>
+              <p>
+                Eating <strong>25g of microgreens</strong> daily is equal to
+                eating <strong>500g of vegetables</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Microgreens - Stats */}
       <section className="section section--cream" id="why">
         <div className="container">
           <div className="section__header section__header--center">
@@ -302,7 +359,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer className="footer" id="contact">
         <div className="container">
           <div className="footer__content">
             <div className="footer__brand">

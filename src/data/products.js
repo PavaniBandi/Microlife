@@ -69,8 +69,8 @@ export const whyMicrogreens = [
     description: 'Grown indoors with RO water. Zero pesticides, zero sprays.',
   },
   {
-    icon: '4',
-    title: 'Hours to Door',
+    icon: '✓',
+    title: 'Same Day Delivery',
     description: 'Harvested and delivered same day for maximum freshness.',
   },
   {

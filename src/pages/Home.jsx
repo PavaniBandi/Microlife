@@ -16,6 +16,23 @@ export default function Home() {
 
   return (
     <div className="landing">
+      {/* Header */}
+      <header className="header">
+        <div className="header__container">
+          <a href="/" className="header__logo">
+            <img src="/logo.png" alt="MicroLife - Micro Greens. Massive nutrition. Delivered fresh." />
+          </a>
+          <nav className="header__nav">
+            <a href="#products">Products</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+          <a href={contact.whatsappLink} className="btn btn--primary">
+            Subscribe Now
+          </a>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="hero">
         <div className="hero__container">
@@ -176,9 +193,6 @@ export default function Home() {
                   <span></span> Pause or cancel anytime
                 </li>
                 <li>
-                  <span></span> Reusable eco-packaging
-                </li>
-                <li>
                   <span></span> WhatsApp support
                 </li>
               </ul>
@@ -189,9 +203,6 @@ export default function Home() {
                 >
                   Start My Subscription
                 </a>
-                <p className="pricing__note">
-                  Delivery across Hyderabad {config.harvestDays.join(", ")}
-                </p>
               </div>
             </div>
             <div className="pricing__image">

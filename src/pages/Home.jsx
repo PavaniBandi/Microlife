@@ -50,10 +50,7 @@ export default function Home() {
               than mature greens, zero pesticides, at your doorstep weekly.
             </p>
             <div className="hero__cta">
-              <a
-                href={contact.whatsappLink}
-                className="btn btn--primary btn--lg"
-              >
+              <a href="#pricing" className="btn btn--primary btn--lg">
                 Subscribe Now — {pricing.currency}
                 {pricing.monthly}/mo
               </a>
@@ -367,8 +364,20 @@ export default function Home() {
               <p>Living nutrition, grown to order.</p>
             </div>
             <div className="footer__contact">
-              <a href={contact.whatsappLink}>WhatsApp</a>
-              <a href={contact.instagramLink}>Instagram</a>
+              <a
+                href={contact.whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
+              <a
+                href={contact.instagramLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
             </div>
           </div>
           <div className="footer__bottom">

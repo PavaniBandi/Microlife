@@ -121,7 +121,7 @@ export const trustBadges = [
   { title: "FSSAI Certified", subtitle: "Food safety registered" },
   { title: "Zero Pesticides", subtitle: "100% chemical free" },
   { title: "Same-Day Harvest", subtitle: "Cut fresh for you" },
-  { title: "Eco Packaging", subtitle: "Reusable containers" },
+  { title: "Non-GMO Seeds", subtitle: "Pure & natural" },
 ];
 
 export const testimonials = [

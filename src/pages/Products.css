@@ -1,0 +1,5 @@
+/* Products page specific styles */
+.product-list {
+  display: grid;
+  gap: var(--space-6);
+}

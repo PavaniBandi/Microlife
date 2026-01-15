@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+
+/* ================================
+   Premium Organic Design System
+   ================================ */
+:root {
+  /* Primary - Sophisticated Forest */
+  --color-primary: #2d5a45;
+  --color-primary-dark: #1e3d2f;
+  --color-primary-light: #4a7c5f;
+  --color-primary-muted: #6b9a7e;
+
+  /* Accent - Warm Gold */
+  --color-accent: #c4a35a;
+  --color-accent-light: #e8d4a8;
+  --color-accent-dark: #a68b3d;
+
+  /* Neutrals */
+  --color-cream: #faf8f5;
+  --color-cream-dark: #f0ebe3;
+  --color-white: #ffffff;
+  --color-light: #f5f7f6;
+
+  /* Text */
+  --color-text: #1a2e23;
+  --color-text-secondary: #4a5d52;
+  --color-text-muted: #7a8a80;
+  --color-text-light: #f5f7f6;
+
+  /* Surfaces */
+  --color-surface: #ffffff;
+  --color-background: #faf8f5;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(26, 46, 35, 0.04);
+  --shadow-sm: 0 2px 8px rgba(26, 46, 35, 0.06);
+  --shadow-md: 0 4px 20px rgba(26, 46, 35, 0.08);
+  --shadow-lg: 0 8px 32px rgba(26, 46, 35, 0.10);
+  --shadow-xl: 0 16px 48px rgba(26, 46, 35, 0.14);
+
+  /* Typography */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.75rem;
+  --font-size-5xl: 3.5rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --radius-full: 999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* Layout */
+  --max-width: 1200px;
+}
+
+/* ================================
+   Reset & Base
+   ================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--font-size-5xl); }
+h2 { font-size: var(--font-size-3xl); }
+h3 { font-size: var(--font-size-xl); }
+
+p {
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+/* ================================
+   Utilities
+   ================================ */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.link {
+  font-weight: 600;
+  color: var(--color-primary);
+  transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.link:hover {
+  color: var(--color-primary-light);
+}
+
+.list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.list li {
+  position: relative;
+  padding-left: var(--space-6);
+  color: var(--color-text-secondary);
+}
+
+.list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
+.list--tight {
+  gap: var(--space-2);
+}
+
+/* ================================
+   Page Layout
+   ================================ */
+.page {
+  position: relative;
+  color: var(--color-text);
+  background: var(--color-background);
+  min-height: 100vh;
+  overflow-x: hidden;
+}

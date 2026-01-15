@@ -1,0 +1,79 @@
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  border: 1px solid rgba(45, 90, 69, 0.06);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.card--hoverable:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.card--dark {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: transparent;
+}
+
+.card--dark:hover {
+  background: var(--color-primary-dark);
+}
+
+.card--accent {
+  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
+  border-color: var(--color-accent-light);
+}
+
+.card--ghost {
+  background: transparent;
+  border: 1px dashed rgba(45, 90, 69, 0.2);
+  box-shadow: none;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.card__body {
+  margin-top: var(--space-4);
+}
+
+.card__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.card__chip {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  background: var(--color-accent-light);
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  font-size: var(--font-size-xs);
+  white-space: nowrap;
+}
+
+.card--dark .card__chip {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--color-white);
+}
+
+.card__note {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+.card--dark .card__note {
+  color: rgba(255, 255, 255, 0.8);
+}

@@ -20,7 +20,10 @@ export default function Home() {
       <header className="header">
         <div className="header__container">
           <a href="/" className="header__logo">
-            <img src="/logo.png" alt="MicroLife - Micro Greens. Massive nutrition. Delivered fresh." />
+            <img
+              src="/logo.png"
+              alt="MicroLife - Micro Greens. Massive nutrition. Delivered fresh."
+            />
           </a>
           <nav className="header__nav">
             <a href="#products">Products</a>
@@ -74,18 +77,10 @@ export default function Home() {
           <div className="hero__visual">
             <div className="hero__image-wrapper">
               <img
-                src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80"
+                src="/images/hero.jpg"
                 alt="Fresh microgreens"
                 className="hero__image"
               />
-              <div className="hero__float-card hero__float-card--1">
-                <span className="float-card__value">4</span>
-                <span className="float-card__label">Deliveries/month</span>
-              </div>
-              <div className="hero__float-card hero__float-card--2">
-                <span className="float-card__value">0</span>
-                <span className="float-card__label">Pesticides</span>
-              </div>
             </div>
           </div>
         </div>
@@ -207,7 +202,7 @@ export default function Home() {
             </div>
             <div className="pricing__image">
               <img
-                src="https://images.unsplash.com/photo-1518977676601-b53f82ber3a?auto=format&fit=crop&w=600&q=80"
+                src="/images/subscription.jpg"
                 alt="Fresh microgreens delivery"
               />
             </div>
